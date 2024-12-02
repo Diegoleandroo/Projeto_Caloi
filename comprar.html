@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Krona+One&family=Lobster&family=Montserrat:wght@400;600&family=Vina+Sans&display=swap');
+        .tabela{
+            text-align: center;
+            border-radius: 35px;
+            padding-top: 45px;
+            padding: 50px;
+            font-size: 25px;
+            font-family: 'Krona One', sans-serif;     
+        }
+        .enviar{
+            font-size: 75%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="form1" method="post" action="grava.jsp"></form>
+    <fieldset class="tabela">
+        <legend>Cadastro</legend>
+        <label for="txtNome">Nome:</label>
+        <input type="text" name="txtNome" id="txtNome">
+        <span id="erroNome"></span>
+        <br>
+        <label for="txtIdade">Idade:</label>
+        <input type="text" name="txtIdade" id="txtIdade">
+        <span id="erroIdade"></span>
+        <br>
+        <label for="txtIdade">Contato:</label>
+        <input type="text" name="txtContato" id="txtContato">
+        <span id="erroContato"></span>
+        <br>
+        <label for="txtIdade">CPF:</label>
+        <input type="text" name="txtCpf" id="txtCpf">
+        <span id="erroContato"></span>
+        <br>
+        <label for="txtEmail">E-mail</label>
+        <input type="text" name="txtEmail" id="txtEmail">
+        <span id="erroEmail"></span>
+        <br>
+        <br>
+        <legend >Localidade</legend>
+        <label for="txtCep">CEP:</label>
+        <input type="text" name="txtCep" id="txtCep">
+        <span id="erroContato"></span>
+        <br>
+        <label for="txtEstado">Estado:</label>
+        <select name="txtEstado" id="txtEstado">
+            <option value=""></option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+        <br>
+        <label for="txtEndereco">Endereço:</label>
+        <input type="text" name="txtEndereco" id="txtEndereco">
+        <span id="erroContato"></span>
+        <label for="txtNumero">N°:</label>
+        <input type="text" name="txtNumero" id="txtNumero">
+        <span id="erroNumero"></span>
+        <label for="txtComplemento">Complemento:</label>
+        <input type="text" name="txtComplemento" id="txtComplemento">
+        <span id="erroComplemento"></span>
+        <br>
+        <br>
+        <legend>Informações da Compra</legend>
+        <label for="txtPagamento">Forma de Pagamento</label>
+        <select name="txtPagamento" id="txtPagamento">
+            <option value="------"></option>
+            <option value="SP">Cartão De Debito</option>
+            <option value="RJ">Cartão De Crédito</option>
+            <option value="MG">Pix</option>
+        </select>
+        <br>
+        <label for="txtPgto">Parcelamento</label>
+        <input type="radio" name="txtPgto" id="txtPgto" value="1" >à vista
+        <input type="radio" name="txtPgto" id="txtPgto" value="3">3x  
+        <input type="radio" name="txtPgto" id="txtPgto" value="6">6x
+        <input type="radio" name="txtPgto" id="txtPgto" value="9">9x
+        <input type="radio" name="txtPgto" id="txtPgto" value="12">12x
+        <br>
+        <br>
+        <legend>Entrega</legend>
+        <input type="radio" name="txtEscolha" id="txtEscolha">PAC      Até 10 dias
+        <br> 
+        <br>
+        <input type="radio" name="txtEscolha" id="txtEscolha">SEDEX    Até 6 dias 
+        <br> 
+        <br>
+        Observações <br>
+        <textarea cols="40" rows="5" name="txtObservacao" id="txtObservacao"> </textarea>
+        <br>
+        <input type="submit" value="Enviar" onclick="verificar()">
+
+
+    </fieldset>
+
+    <script>
+
+        function verificar(){
+            var no = document.getElementById("txtNome").value;
+            var i = document.getElementById("txtIdade").value;
+            var c = document.getElementById("txtContato").value;
+            var cp = document.getElementById("txtCpf").value;
+            var em = document.getElementById("txtEmail").value;
+            var ce = document.getElementById("txtCep").value;
+            var es = document.getElementById("txtEstado").value;
+            var en = document.getElementById("txtEndereco").value;
+            var n = document.getElementById("txtNumero").value;
+            var com = document.getElementById("txtComplemento").value;
+            var f = document.getElementById("txtPagamento").value;
+            var pa = document.getElementById("txtPgto").value;
+            var pac_sedex = document.getElementById("txtEscolha").value;
+            var o = document.getElementById("txtObservacao").value;
+
+
+            
+                
+            document.form1.submit()
+                
+
+            
+
+    
+
+        }
+
+
+    </script>
+    
+    
+    
+</body>
+</html>

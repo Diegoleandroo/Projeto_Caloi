@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Krona+One&family=Lobster&family=Montserrat:wght@400;600&family=Vina+Sans&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+.cabecalhoo{
+
+    font-size: 32px;
+    text-align: center;
+    padding: 45px;
+    
+
+}
+
+.conteudo{
+
+    text-align: center;    
+    display: flex;
+    gap : 579px;
+    background-color: rgb(206, 46, 46);
+    padding: 35px;
+    border-radius: 15px;
+    font-family: 'Krona One', sans-serif;
+
+
+}
+
+.conteudo:hover{
+    background-color: rgb(213, 205, 205);
+}
+
+.bandeiraa{
+
+    display: block;
+    width: 32px;
+
+}
+
+
+
+
+.menu{
+
+    text-align: center;
+    width: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.inicializacao{
+
+    display: flex;
+    align-items: left;
+    padding: 3% 13%;
+    justify-content: space-between;
+
+
+
+
+}
+
+
+
+
+.inicio{
+
+    display: flex;
+    flex-direction: column;
+    width: 654px;
+    
+
+
+
+}
+
+.texto_1{
+
+    font-size: 34px;
+    font-family: 'Krona One', sans-serif;
+    padding: 10px;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    width: 658px;
+    
+}
+
+.texto_2{
+
+    font-size: 28px;
+    font-family: 'Krona One', sans-serif ;
+}
+
+.texto_3{
+
+    font-size: 26px;
+    padding: 24px;
+    
+}
+
+.content{
+    
+    
+    width: 75%;
+    height: 399px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left:90%;
+    transform: translate(-50%, -20%);
+    box-shadow: 10px 10px 5px 0px black;
+}
+
+.navigation{
+    gap: 54px;
+    position: absolute;
+    bottom: 160px;
+    left: 850px;
+    display: flex;
+}
+
+label{
+    display: none;
+}
+
+.bar{
+
+    
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover{
+    background-color: red;
+}
+
+input {
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    
+}
+
+.slide{
+    
+    font-size: 74px;
+    width: 20%;
+    transition: .6s;
+
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+.parte2{
+    text-align: center;
+    font-size: 64px; 
+}
+
+.bike1{
+    width: 600%;
+}
+
+
+#meio{
+
+    padding: 10px;
+    float: right;
+    
+}
+
+#produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.modelo_produto1{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto2{
+     text-align: center;
+     font-size: 30px;
+     color: black;
+}
+
+.modelo_produto3{
+     text-align: center;
+     font-size: 30px;
+     color: black;
+}
+
+.modelo_produto4{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto5{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto6{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto7{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto8{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto9{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto10{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto11{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modelo_produto12{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.mtb1_ima{
+
+    width: 600px;
+    height: 600px;
+
+}
+
+.mtb2_ima{
+    width: 600px;
+    height: 600px;
+}
+
+.mtb3_ima{
+    width: 600px;
+    height: 600px;
+}
+
+.speed1_ima{
+    width: 500px;
+    height: 500px;
+}
+
+.speed2_ima{
+    width: 490px;
+    height: 490px;
+
+}
+
+.speed3_ima{
+    width: 500px;
+    height: 500px;
+    
+}
+
+.bmx1_ima{
+    width: 600px;
+    height: 600px;
+
+}
+
+.bmx2_ima{
+    width: 600px;
+    height: 600px;
+
+}
+
+.bmx3_ima{
+    width: 600px;
+    height: 600px;
+
+}
+
+.parte3{
+  
+    text-align: center;
+    font-size: 64px;
+
+}
+
+.ace{
+    margin-top: 150%;
+    text-align: center;
+    left: 100px;
+}
+
+.carrossel{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.selecao{
+    position: absolute ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canal{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+
+}
+
+.on{
+
+    opacity: 1;
+
+}
+
+
+
+#prev-button , #next-button{
+
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img , #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button{
+    transform:rotate(100deg);
+}
+
+.voltar{
+    text-align: right;
+}
+
+.botao1{
+
+    
+    text-decoration: none;
+    border-radius: 25%;
+    color: red
+    
+    
+}
+
+.parte4{
+
+    text-align: center;
+    font-size: 64px;
+    
+
+}
